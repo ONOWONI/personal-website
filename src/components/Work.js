@@ -2,8 +2,8 @@ import img from '../img/School_1.jpg'
 
 export default function Work() {
     return (
-        <div className="work">
-            Here is a list of projects that i have done
+        <div className="work background">
+            <h1 className='project-header'>Here is a list of projects that i have done</h1>
             <div className='project-container '>
                 <div className="left-card">
                     <div className="project-img">

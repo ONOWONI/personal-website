@@ -66,10 +66,16 @@ svg {
 }
 
 
-.work{
+.background{
     background-color: #00495C;
-    padding: 5px;
     margin: 10px;
+}
+
+.project-header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding: 30px;
+    font-size: 1.5rem;
 }
 
 .project-container{
@@ -80,6 +86,7 @@ svg {
 
 .left-card{
     display: flex;
+    padding: 0 0 30px 0;
 }
 
 
@@ -93,9 +100,47 @@ svg {
 
 .project-text{
     width: 50%;
+    padding: 10px;
 }
 
+.project-text h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    animation: left-to-right .5s ease-in-out;
+    /* transition: all .5s ease-in; */
+    /* transform: translate(10px, 100px); */
+}
+
+.project-text p {
+    animation: left-to-right .5s ease-in-out .1s;
+}
+
+
 .right-card{
-    display: flex;
     flex-direction: row-reverse;
+    display: flex;
+}
+
+@keyframes left-to-right {
+    0% {
+        transform: translate(10px, 30px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+
+
+.skills{
+    height: 78.1vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bubble{
+    background-color: hsl(189, 99%, 86%);
+    width: fit-content;
+    height: fit-content;
+    padding: 40px;
+    border-radius: 100%;
 }
