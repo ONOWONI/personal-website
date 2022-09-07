@@ -1,11 +1,30 @@
+body{
+    /* background-color: hsl(239, 35%, 60%); */
+    /* a choich for light bluebackground-color: hsl(209, 80%, 60%); */
+    /* background-color: #1C3E5E; */
+    background-color: #ffec19;
+    /* background-color: #00495C; */
+    color: #01C3E5;
+    /* #FFEC19  text colour */
+    /* color: #479ceb; */
+}
+
+/*main colour 60% 241°, 70%, 51%
+secondary colour 242°, 53%, 85%
+accent 23°, 80%, 51% everything is in hsl
+*/
 .footer {
-    position: absolute;
-    background-color: #6150addc;
-    width: 100%;
+    padding-top: 10px;
+    position: sticky;
+    background-color: #00495C;
+    /* border:10px solid #ffec19; */
+    width: 97.5vw;
+    margin: 0 auto;
     bottom: 1px;
-    left: calc(100% /2);
-    transform: translateX(-50%);
-    border-top: 1px solid black;
+    /* left: calc(100% /2); */
+    /* transform: translateX(-50%); */
+    border-top: 10px solid #ffec19;
+    border-bottom: 10px solid #ffec19;
     height: 100px;
 }
 
@@ -21,7 +40,7 @@
 .footer-ul li {
     padding: 20px;
     /* border: solid black 1px; */
-    background-color: rgb(204, 206, 113);
+    background-color: #ffec19;
     width: 70px;
     height: 30px;
     border-radius: 100%;
@@ -36,4 +55,47 @@
     color:  black;
     text-decoration: none;
     cursor: pointer;
+}
+
+
+svg {
+    border: red solid 1px;
+    width: 500px;
+    height: 300px;
+    /* height: 100px; */
+}
+
+
+.work{
+    background-color: #00495C;
+    padding: 5px;
+    margin: 10px;
+}
+
+.project-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.left-card{
+    display: flex;
+}
+
+
+.project-img{
+    width: 50%;
+}
+
+.project-img img{
+    width: 100%;
+}
+
+.project-text{
+    width: 50%;
+}
+
+.right-card{
+    display: flex;
+    flex-direction: row-reverse;
 }
