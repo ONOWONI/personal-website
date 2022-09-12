@@ -1,3 +1,6 @@
+html{
+    height: auto;
+}
 body{
     /* background-color: hsl(239, 35%, 60%); */
     /* a choich for light bluebackground-color: hsl(209, 80%, 60%); */
@@ -17,12 +20,8 @@ accent 23°, 80%, 51% everything is in hsl
     padding-top: 10px;
     position: sticky;
     background-color: #00495C;
-    /* border:10px solid #ffec19; */
-    width: 97.5vw;
-    margin: 0 auto;
+    margin: 0 10px;
     bottom: 1px;
-    /* left: calc(100% /2); */
-    /* transform: translateX(-50%); */
     border-top: 10px solid #ffec19;
     border-bottom: 10px solid #ffec19;
     height: 100px;
@@ -39,7 +38,6 @@ accent 23°, 80%, 51% everything is in hsl
 
 .footer-ul li {
     padding: 20px;
-    /* border: solid black 1px; */
     background-color: #ffec19;
     width: 70px;
     height: 30px;
@@ -58,17 +56,15 @@ accent 23°, 80%, 51% everything is in hsl
 }
 
 
-svg {
-    border: red solid 1px;
-    width: 500px;
-    height: 300px;
-    /* height: 100px; */
-}
-
 
 .background{
     background-color: #00495C;
     margin: 10px;
+    margin-bottom: 0;
+}
+
+.home{
+    height: calc(100vh - 141px);
 }
 
 .project-header{
@@ -105,13 +101,11 @@ svg {
 
 .project-text h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    animation: left-to-right .5s ease-in-out;
-    /* transition: all .5s ease-in; */
-    /* transform: translate(10px, 100px); */
+    animation: left-to-right 1s ease-in-out;
 }
 
 .project-text p {
-    animation: left-to-right .5s ease-in-out .1s;
+    animation: left-to-right 1s ease-in-out .1s;
 }
 
 
@@ -132,7 +126,7 @@ svg {
 
 
 .skills{
-    height: 78.1vh;
+    height: calc(100vh - 140px);
     display: flex;
     flex-wrap: wrap;
 }
@@ -143,9 +137,61 @@ svg {
     height: fit-content;
     padding: 40px;
     border-radius: 100%;
-    /* transform: ; */
 }
 
 .contact {
-    height: 78.1vh;
+    height: calc(100vh - 141px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+h4 {
+    margin: 30px 0 10px 0;
+}
+.input {
+    display: flex;
+    margin: 5px 0 30px 0;
+    justify-content: space-between;
+}
+
+.input > input{
+    width: 300px;
+    height: 50px;
+    border: 1px solid black;
+    text-align:justify;
+    /* border: none; */
+    background-color: #00495C;
+    color: #ffec19;
+}
+
+textarea {
+    height: 150px;
+    border: 1px solid black;
+    background-color: #00495C;
+    color: #ffec19;
+    margin-bottom: 20px;
+}
+
+.btn {
+    border: none;
+    width: 30%;
+    margin: 0 auto;
+    height: 30px;
+    background-color: #ffec19;
+    color: #00495C;
+    font-size: larger;
+    cursor: pointer;
 }

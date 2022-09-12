@@ -4,7 +4,7 @@ export default function Contact(){
     const [form, setForm] = React.useState({
         name : "",
         subject: "",
-        body : "this is my body"
+        body : ""
     })
     function handleForm(event) {
         const {name, value, type, checked} = event.target
@@ -16,24 +16,35 @@ export default function Contact(){
         })
 
     }
-    console.log(form);
+
     function handleSubmit(event) {
         event.preventDefault()
-        console.log("Howdy");
-        setForm({
-            name: "",
-            subject: "",
-            body : ""
-        })
+        if (form.body === "") {
+            console.log("not ready");
+        } else {
+
+            setForm({
+                name: "",
+                subject: "",
+                body : ""
+            })
+        }
     }
+
 
     return (
         <div className="contact background">
+            <h1>I want to hear from you</h1>
             <form onSubmit={handleSubmit}>
-                <input type="text" name="name" placeholder="Name" value={form.name} onChange={handleForm} />
-                <input type="text" name="subject" placeholder="subject" value={form.subject} onChange={handleForm} />
+                <div>
+                    <h4>Send me an email</h4>
+                    <div className="input">
+                        <input type="text" name="name" placeholder="Name" value={form.name} onChange={handleForm} />
+                        <input type="text" name="subject" placeholder="subject" value={form.subject} onChange={handleForm} />
+                    </div>
+                </div>
                 <textarea  name="body" placeholder="Body" value={form.body} onChange={handleForm} />
-                <input type="submit" value="name" />
+                <input type="submit" value="Send" className="btn" />
             </form>
         </div>
     )

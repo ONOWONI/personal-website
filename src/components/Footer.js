@@ -13,9 +13,9 @@ export default function Footer() {
             <Link to="/skills" className="link-text" >
                 <li>Skills</li>
             </Link>
-            <Link to="/cv" className="link-text" >
+            {/* <Link to="/cv" className="link-text" >
                 <li>CV</li>
-            </Link>
+            </Link> */}
             <Link to="/contact" className="link-text" >
                 <li>Contact</li>
             </Link>

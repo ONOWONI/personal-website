@@ -3,9 +3,9 @@
 export default function Home() {
     
     return (
-        <div>
-            <xml version="1.0" encoding="UTF-8" standalone="no" />
+        <div className="home background">
             Welcome
+            <p>Hi, I'm Daniel a python web developer with both front and backend skills.</p>
         </div>
     )
 }
