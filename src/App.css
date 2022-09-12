@@ -145,3 +145,7 @@ svg {
     border-radius: 100%;
     /* transform: ; */
 }
+
+.contact {
+    height: 78.1vh;
+}
