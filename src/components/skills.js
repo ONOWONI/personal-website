@@ -29,16 +29,20 @@ export default function Skills() {
       setYes(prev => {
         return prev.map(item => {
           return item.id === itemID ? {...item, isClicked: !item.isClicked} : item
-          })
         })
-      }
+      })
+    }
+
+
+
 
     const bubbles = yes.map(item => <Bubbles key={item.id}
        id={item.id}
        onMouseEnter={() => handleMouse(item.id)}
        isOver={item.isClicked}
        name={item.name}
-       mouseOut={() => mouseOut(item.id)} />)
+       mouseOut={() => mouseOut(item.id)}
+       />)
     return(
         <div className="skills background">
             {bubbles}
