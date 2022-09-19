@@ -12,11 +12,25 @@ export default function Skills() {
           arr.push({
             id: i+1,
             name: names[i],
-            isClicked : false
+            isClicked : false,
+            animate_number : randoms()
             })
           }
         return arr
         }
+
+    function randoms() {
+      const x = Math.floor(Math.random() * (window.innerWidth - 200))
+      const y = Math.floor(Math.random() * (window.innerHeight - 200))
+      const xto = Math.floor(Math.random() * (window.innerWidth - 200))
+      const yto = Math.floor(Math.random() * (window.innerHeight - 200))
+      const speed = Math.floor(Math.random() * 30)
+      return [x, y, xto, yto, speed]
+    }
+
+
+
+
     function handleMouse(itemID) {
     setYes(prev => {
       return prev.map(item => {
@@ -41,6 +55,7 @@ export default function Skills() {
        onMouseEnter={() => handleMouse(item.id)}
        isOver={item.isClicked}
        name={item.name}
+       animate_list={item.animate_number}
        mouseOut={() => mouseOut(item.id)}
        />)
     return(

@@ -19,7 +19,7 @@ export default function Work() {
                             <p>this is an app Made with the python Flask framework that help users in documenting their day,
                                 It has basic CRUD funtionalities as well as a login system that uses cookies to remember users
                             </p>
-                            <p>Check out Name <a href='#' className='out-link'>here</a></p>
+                            <p>Check out Name <a href='/work' className='out-link'>here</a></p>
                         </div>
                     </div>
                 </FullpageSection>
@@ -33,7 +33,7 @@ export default function Work() {
                             <p>This is an two part app that helps the poolinc crew find new customers
                                 the frontend is built with react and it fetches data from a Django rest Framework API on the backend
                             </p>
-                            <p>Check out Poolinc <a href='#' className='out-link'>here</a></p>
+                            <p>Check out Poolinc <a href='/work' className='out-link'>here</a></p>
                         </div>
                     </div>
                 </FullpageSection>
@@ -47,7 +47,7 @@ export default function Work() {
                             <p>This is an two part app that helps the poolinc crew find new customers
                                 the frontend is built with react and it fetches data from a Django rest Framework API on the backend
                             </p>
-                            <p>Check out Poolinc <a href='#' className='out-link'>here</a></p>
+                            <p>Check out Poolinc <a href='/work' className='out-link'>here</a></p>
                         </div>
                     </div>
                 </FullpageSection>
