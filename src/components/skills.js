@@ -20,12 +20,16 @@ export default function Skills() {
         }
 
     function randoms() {
-      const x = Math.floor(Math.random() * (window.innerWidth - 200))
-      const y = Math.floor(Math.random() * (window.innerHeight - 200))
-      const xto = Math.floor(Math.random() * (window.innerWidth - 200))
-      const yto = Math.floor(Math.random() * (window.innerHeight - 200))
-      const speed = Math.floor(Math.random() * 30)
-      return [x, y, xto, yto, speed]
+      const xTop = Math.floor(Math.random() * (window.innerWidth - 200))
+      const yTop = Math.floor(Math.random() * (window.innerHeight - 200))
+      const xLeft = Math.floor(Math.random() * (window.innerWidth - 200))
+      const yLeft = Math.floor(Math.random() * (window.innerHeight - 200))
+      const xBottom = Math.floor(Math.random() * (window.innerWidth - 200))
+      const yBottom = Math.floor(Math.random() * (window.innerHeight - 200))
+      const xRight = Math.floor(Math.random() * (window.innerWidth - 200))
+      const yRight = Math.floor(Math.random() * (window.innerHeight - 200))
+      const speed = Math.floor(Math.random() * 30) + 10
+      return [xTop, yTop, xLeft, yLeft, xBottom, yBottom, xRight, yRight, speed]
     }
 
 

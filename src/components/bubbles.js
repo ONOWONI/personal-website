@@ -10,10 +10,25 @@ export default function Bubbles(props) {
         left: ${props.animate_list[0]}px;
         top: ${props.animate_list[1]}px;
     }
-    100% {
+    25% {
         background-color : green;
         left: ${props.animate_list[2]}px;
         top: ${props.animate_list[3]}px;
+    }
+    50% {
+        background-color : green;
+        left: ${props.animate_list[4]}px;
+        top: ${props.animate_list[5]}px;
+    }
+    75% {
+        background-color : red;
+        left: ${props.animate_list[6]}px;
+        top: ${props.animate_list[7]}px;
+    }
+    100% {
+        background-color : green;
+        left: ${props.animate_list[0]}px;
+        top: ${props.animate_list[1]}px;
     }
     `
 
@@ -22,7 +37,7 @@ export default function Bubbles(props) {
     left: ${props.animate_list[0]}px;
     top: ${props.animate_list[1]}px;
     animation: ${text};
-    animation-duration : 20s;
+    animation-duration : ${props.animate_list[8]}s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-play-state: ${props.isOver ? "paused" : "running"}
@@ -32,14 +47,17 @@ export default function Bubbles(props) {
 
     return (
         <Named className="bubble"
-        onMouseEnter={props.onMouseEnter}
+        // onMouseEnter={props.onMouseEnter}
+        onClick={props.onMouseEnter}
         // style={styles}
-        onMouseOut={props.mouseOut}
+        // onMouseOut={props.mouseOut}
         // data-x={props.animate_list[0]}
         // data-y={props.animate_list[1]}
         >
             {props.name}
+
         </Named>
     )
 }
+
 
