@@ -13,11 +13,11 @@ export default function Footer() {
             <Link to="/skills" className="link-text" >
                 <li>Skills</li>
             </Link>
-            {/* <Link to="/cv" className="link-text" >
-                <li>CV</li>
-            </Link> */}
             <Link to="/contact" className="link-text" >
                 <li>Contact</li>
+            </Link>
+            <Link to="/*" className="link-text" >
+                <li>404</li>
             </Link>
             </ul>
         </footer>

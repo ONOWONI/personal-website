@@ -42,17 +42,11 @@ export default function Bubbles(props) {
     animation-iteration-count: infinite;
     animation-play-state: ${props.isOver ? "paused" : "running"}
     `
-    // animation-duration : ${props.animate_list[4]}s;
 
 
     return (
         <Named className="bubble"
-        // onMouseEnter={props.onMouseEnter}
         onClick={props.onMouseEnter}
-        // style={styles}
-        // onMouseOut={props.mouseOut}
-        // data-x={props.animate_list[0]}
-        // data-y={props.animate_list[1]}
         >
             {props.name}
 

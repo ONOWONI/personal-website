@@ -5,6 +5,7 @@ import Work from './components/Work';
 import Skills from './components/skills';
 import Contact from './components/contact';
 import Footer from './components/Footer';
+import Error from './components/error';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Route path='work' element={<Work />} />
         <Route path='skills' element={<Skills />} />
         <Route path='contact' element={<Contact />} />
-        <Route path='*' element={<div>Error 404</div>} />
+        <Route path='*' element={<Error />} />
       </Routes>
       <Footer />
     </BrowserRouter>
@@ -22,3 +23,15 @@ function App() {
 }
 
 export default App;
+
+
+// tasks to complete
+// box shadows
+// skills image
+// new background image
+// rotating gear svg
+// email sending
+// 404 page
+// resume download
+// about you
+// media queries

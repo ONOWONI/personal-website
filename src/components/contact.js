@@ -20,9 +20,20 @@ export default function Contact(){
     function handleSubmit(event) {
         event.preventDefault()
         if (form.body === "") {
-            console.log("not ready");
+            setForm(prev => {
+                return {
+                    ...prev,
+                    body : "*Required"
+                }
+            })
+        } else if (form.body === "*Required") {
+            setForm(prev => {
+                return {
+                    ...prev,
+                    body : "*Required"
+                }
+            })
         } else {
-
             setForm({
                 name: "",
                 subject: "",

@@ -1,5 +1,6 @@
 import img from '../img/djurnal.png'
 import poolinc from '../img/poolinc.png'
+import poolinc2 from '../img/secondpoolinc.png'
 import { Fullpage, FullPageSections, FullpageSection, FullpageNavigation } from '@ap.cx/react-fullpage'
 
 export default function Work() {
@@ -40,7 +41,7 @@ export default function Work() {
                 <FullpageSection>
                     <div className="left-card project-card not-first">
                         <div className="project-img">
-                            <img src={poolinc} alt="Home screen of project" />
+                            <img src={poolinc2} alt="Home screen of project" />
                         </div>
                         <div className="project-text">
                             <h1>Poolinc</h1>
