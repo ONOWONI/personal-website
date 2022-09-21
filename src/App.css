@@ -1,13 +1,20 @@
 html{
     height: auto;
 }
+
+:root{
+    --text-colour :  #ffec19;
+    --background-color : #00495C;
+    /* color: #01c3e5; */
+}
+
 body{
     /* background-color: hsl(239, 35%, 60%); */
     /* a choich for light bluebackground-color: hsl(209, 80%, 60%); */
     /* background-color: #1C3E5E; */
-    background-color: #ffec19;
+    background-color: var(--text-colour);
+    color: var(--text-colour);
     /* background-color: #00495C; */
-    color: #01C3E5;
     /* #FFEC19  text colour */
     /* color: #479ceb; */
 }
@@ -19,11 +26,11 @@ accent 23°, 80%, 51% everything is in hsl
 .footer {
     padding-top: 10px;
     position: sticky;
-    background-color: #00495C;
+    background-color: var(--background-color);
     margin: 0 10px;
     bottom: 1px;
-    border-top: 10px solid #ffec19;
-    border-bottom: 10px solid #ffec19;
+    border-top: 10px solid var(--text-colour);
+    border-bottom: 10px solid var(--text-colour);
     height: 100px;
 }
 
@@ -38,7 +45,7 @@ accent 23°, 80%, 51% everything is in hsl
 
 .footer-ul li {
     padding: 20px;
-    background-color: #ffec19;
+    background-color:var(--text-colour);
     width: 70px;
     height: 30px;
     border-radius: 100%;
@@ -58,13 +65,41 @@ accent 23°, 80%, 51% everything is in hsl
 
 
 .background{
-    background-color: #00495C;
+    background-color: var(--background-color);
+    background-image: url("./img/logo.svg");
+    background-repeat: repeat;
+    background-size: 10% 20%;
     margin: 10px;
     margin-bottom: 0;
 }
 
 .home{
     min-height: calc(100vh - 141px);
+    overflow: hidden;
+}
+
+.home-container{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.kunai {
+    height: 100px;
+    position: relative;
+    right: 20px;
+    top: calc(100vh - 300px);
+    width: 100px;
+}
+
+.home-container div {
+    position: relative;
+    top: 200px;
+    left: 30px;
+    width: 50%;
+    height: fit-content;
+    /* margin: auto; */
+    background-color:var(--background-color);
 }
 
 
@@ -96,11 +131,12 @@ accent 23°, 80%, 51% everything is in hsl
 .project-card {
     position: relative;
     /* top: 5vh; */
+    width: calc(100vw - 40px);
     left: 10px;
     height: 60vh;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom:100px;
     display: flex;
     /* scroll-snap-align: start; */
 }
@@ -127,6 +163,7 @@ accent 23°, 80%, 51% everything is in hsl
 .project-text{
     width: 50%;
     padding: 10px;
+    background-color:var(--background-color);
 }
 
 .project-text h1{
@@ -199,6 +236,9 @@ accent 23°, 80%, 51% everything is in hsl
 }
 
 .contact h1 {
+    /* border: 1px solid black; */
+    background-color:var(--background-color);
+    padding: 5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 3rem;
 }
@@ -212,6 +252,9 @@ form {
 
 h4 {
     margin: 30px 0 10px 0;
+    background-color: var(--background-color);
+    width: fit-content;
+    padding: 10px;
 }
 .input {
     display: flex;
@@ -226,8 +269,8 @@ h4 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-indent: 5px;
     text-align:justify;
-    background-color: #00495C;
-    color: #ffec19;
+    background-color:var(--background-color);
+    color:var(--text-colour);
 }
 
 textarea {
@@ -235,8 +278,8 @@ textarea {
     height: 150px;
     border: 1px solid black;
     text-indent: 5px;
-    background-color: #00495C;
-    color: #ffec19;
+    background-color:var(--background-color);
+    color:var(--text-colour);
     margin-bottom: 20px;
 }
 
@@ -245,8 +288,8 @@ textarea {
     width: 30%;
     margin: 0 auto;
     height: 30px;
-    background-color: #ffec19;
-    color: #00495C;
+    background-color:var(--text-colour);
+    color:var(--background-color);
     font-size: larger;
     cursor: pointer;
 }
