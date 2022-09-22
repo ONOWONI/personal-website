@@ -16,9 +16,6 @@ export default function Footer() {
             <Link to="/contact" className="link-text" >
                 <li>Contact</li>
             </Link>
-            <Link to="/*" className="link-text" >
-                <li>404</li>
-            </Link>
             </ul>
         </footer>
     )
