@@ -28,12 +28,12 @@ export default App;
 // tasks to complete
 //// box shadows
 // // email sending
-// hover btns
+// //hover btns
+//// resume download
+//// skills image
+//// rotating gear svg
 // footer background image
-// skills image
 // new background image
-// rotating gear svg
 // 404 page
-// resume download
 // about you
 // media queries

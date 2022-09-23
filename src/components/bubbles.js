@@ -11,22 +11,18 @@ export default function Bubbles(props) {
         top: ${props.animate_list[1]}px;
     }
     25% {
-        background-color : green;
         left: ${props.animate_list[2]}px;
         top: ${props.animate_list[3]}px;
     }
     50% {
-        background-color : green;
         left: ${props.animate_list[4]}px;
         top: ${props.animate_list[5]}px;
     }
     75% {
-        background-color : red;
         left: ${props.animate_list[6]}px;
         top: ${props.animate_list[7]}px;
     }
     100% {
-        background-color : green;
         left: ${props.animate_list[0]}px;
         top: ${props.animate_list[1]}px;
     }
@@ -48,10 +44,9 @@ export default function Bubbles(props) {
         <Named className="bubble"
         onClick={props.onMouseEnter}
         >
-            {props.name}
+            <img src={props.name} alt="logo" />
 
         </Named>
     )
 }
-
 

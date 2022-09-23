@@ -1,5 +1,13 @@
 import React from "react"
 import Bubbles from "./bubbles"
+import reactsvg from "../img/react-2.svg"
+import django from "../img/django-community.svg"
+import python from "../img/python-4.svg"
+import javascript from "../img/logo-javascript.svg"
+import flask from "../img/flask.svg"
+import fastapi from "../img/fastapi-1.svg"
+import css from "../img/css-3.svg"
+import html from "../img/html-1.svg"
 
 export default function Skills() {
     const [yes, setYes] = React.useState(generateIdClick())
@@ -7,7 +15,7 @@ export default function Skills() {
 
     function generateIdClick() {
         let arr = []
-        const names = ["React","Django","Flask","FastAPI","HTML","CSS", "Python", "Javascript"]
+        const names = [reactsvg, django,flask,fastapi,html,css, python,javascript]
         for (let i = 0; i < 8; i++) {
           arr.push({
             id: i+1,
@@ -21,13 +29,13 @@ export default function Skills() {
 
     function randoms() {
       const xTop = Math.floor(Math.random() * (window.innerWidth - 200))
-      const yTop = Math.floor(Math.random() * (window.innerHeight - 200))
+      const yTop = Math.floor(Math.random() * (window.innerHeight - 250))
       const xLeft = Math.floor(Math.random() * (window.innerWidth - 200))
-      const yLeft = Math.floor(Math.random() * (window.innerHeight - 200))
+      const yLeft = Math.floor(Math.random() * (window.innerHeight - 250))
       const xBottom = Math.floor(Math.random() * (window.innerWidth - 200))
-      const yBottom = Math.floor(Math.random() * (window.innerHeight - 200))
+      const yBottom = Math.floor(Math.random() * (window.innerHeight - 250))
       const xRight = Math.floor(Math.random() * (window.innerWidth - 200))
-      const yRight = Math.floor(Math.random() * (window.innerHeight - 200))
+      const yRight = Math.floor(Math.random() * (window.innerHeight - 250))
       const speed = Math.floor(Math.random() * 30) + 10
       return [xTop, yTop, xLeft, yLeft, xBottom, yBottom, xRight, yRight, speed]
     }
