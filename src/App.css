@@ -16,8 +16,6 @@ body{
     padding-top: 10px;
     position: sticky;
     background-color: var(--background-color);
-    /* background-image: url("./img/star.svg");
-    background-repeat: repeat; */
     margin: 0 10px;
     bottom: 1px;
     border-top: 10px solid var(--text-colour);
@@ -62,7 +60,6 @@ body{
 
 
 .link-text{
-    color:  black;
     text-decoration: none;
     cursor: pointer;
 }
@@ -95,19 +92,10 @@ body{
     position: absolute;
     top: 50px;
     right: 100px;
-    animation: roratestar 2s linear infinite;
-}
-
-.star2 {
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    top: 50px;
-    right: 100px;
     animation: roratestar 3s linear infinite;
 }
 
-.star2:hover {
+.star:hover {
     animation-play-state: paused;
 }
 
@@ -128,25 +116,6 @@ body{
         transform: rotate(360deg);
     }
 }
-
-@keyframes roratestar2 {
-    0% {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(-90deg);
-    }
-    50% {
-        transform: rotate(-180deg);
-    }
-    75% {
-        transform: rotate(-270deg)
-    }
-    100% {
-        transform: rotate(-360deg);
-    }
-}
-
 .kunai {
     height: 100px;
     position: relative;
@@ -170,7 +139,6 @@ body{
     animation-delay: 3.8s;
 }
 
-/* 5ps blur for close */
 @keyframes boderbox {
     0% {
         box-shadow: inset 20px 10px 500px 10px rgba(0, 0, 0, 0.28),
@@ -257,7 +225,6 @@ body{
 .project-text{
     width: 50%;
     padding: 10px;
-    /* background-color:var(--background-color); */
 }
 
 .project-text h1{
@@ -292,9 +259,9 @@ body{
 
 .skills{
     min-height: calc(100vh - 141px);
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    position: relative;
+    position: relative; */
 }
 
 .bubble{
@@ -438,3 +405,115 @@ textarea:focus{
 }
 
 
+@media only screen and (max-width: 650px) {
+    .footer {
+        height: 50px;
+    }
+
+
+    .footer-ul {
+        list-style: none;
+        background-size: 20% 100%;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin: 0;
+    }
+    .footer-ul li {
+        padding: 0 10px;
+        width: 40px;
+        border:1px solid var(--text-colour);
+        border-radius: 10px;
+        font-size: 1rem;
+    }
+
+    .background{
+        background-size: 30% 20%;
+    }
+
+    .home{
+        height: calc(100vh - 91px);
+    }
+
+
+    .star {
+        top: 50px;
+        left: 50px;
+        width: 250px;
+        height: 250px;
+        transform: translate(-50% -50%);
+        z-index: 1;
+    }
+    .home-container div {
+        padding: 0;
+        top: 200px;
+        left: calc((100vw - 20px) /2);
+        transform: translateX(-50%);
+        width: 100%;
+        z-index: 2;
+        opacity: .9;
+    }
+
+    #cv {
+        position: relative;
+        top: -15px;
+        left: 15px;
+    }
+
+    .project-card {
+        width: calc(100vw - 20px);
+        margin-bottom:100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .not-first{
+        top: 15vh;
+    }
+    .project-text{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .skills{
+        min-height: calc(100vh - 91px);
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+
+    .contact {
+        min-height: calc(100vh - 91px);
+    }
+
+    .contact > h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .input {
+        display: flex;
+        flex-direction: column;
+    }
+    .input > input{
+        width: calc(100vw - 25px);
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        position: relative;
+        width: 50%;
+        top: 100px;
+        height: 40px;
+        font-size: 1.8rem;
+    }
+
+    .error{
+        height: calc(100vh - 91px);
+    }
+}

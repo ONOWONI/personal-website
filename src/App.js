@@ -26,5 +26,5 @@ export default App;
 
 
 // tasks to complete
+//// media queries
 // about you
-// media queries
