@@ -26,14 +26,6 @@ export default App;
 
 
 // tasks to complete
-//// box shadows
-// // email sending
-// //hover btns
-//// resume download
-//// skills image
-//// rotating gear svg
-// footer background image
-// new background image
 // 404 page
 // about you
 // media queries
