@@ -26,6 +26,5 @@ export default App;
 
 
 // tasks to complete
-// 404 page
 // about you
 // media queries

@@ -269,6 +269,10 @@ body{
     animation: left-to-right 1s ease-in-out .1s;
 }
 
+.out-link {
+    color: white;
+}
+
 
 .right-card{
     flex-direction: row-reverse;
@@ -417,4 +421,20 @@ textarea:focus{
 
 .error{
     height: calc(100vh - 141px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+
+.four {
+    font-size: 4rem;
+}
+
+
+.error-text {
+    font-size: 2rem;
+}
+
+
