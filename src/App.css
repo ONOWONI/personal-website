@@ -164,7 +164,6 @@ body{
 }
 
 .home-container div:hover {
-    /* border: solid 2px  #ffec19; */
     animation: none;
     box-shadow: 0 0 10px;
     transform:  scale(1.05);
@@ -449,12 +448,16 @@ textarea:focus{
     }
     .home-container div {
         padding: 0;
-        top: 200px;
+        top: 100px;
         left: calc((100vw - 20px) /2);
         transform: translateX(-50%);
         width: 100%;
         z-index: 2;
         opacity: .9;
+    }
+
+    .home-container div:hover {
+        transform: none;
     }
 
     #cv {
@@ -511,7 +514,7 @@ textarea:focus{
     .btn {
         position: relative;
         width: 50%;
-        top: 100px;
+        top: 50px;
         height: 40px;
         font-size: 1.8rem;
     }
