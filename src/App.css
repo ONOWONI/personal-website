@@ -438,6 +438,7 @@ textarea:focus{
 
     .home{
         height: calc(100vh - 91px);
+        overflow: auto;
     }
 
 
