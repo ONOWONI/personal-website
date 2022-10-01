@@ -406,6 +406,9 @@ textarea:focus{
 
 
 @media only screen and (max-width: 650px) {
+    body{
+        padding: 0;
+    }
     .footer {
         height: 50px;
     }
@@ -446,18 +449,35 @@ textarea:focus{
         transform: translate(-50% -50%);
         z-index: 1;
     }
+
+    .home-container{
+        display: block;
+    }
+
+    .kunai {
+        height: 100px;
+        position: absolute;
+        right: 20px;
+        top: calc(100vh - 300px);
+        width: 100px;
+        cursor: pointer;
+    }
     .home-container div {
-        padding: 0;
-        top: 100px;
+        padding: 0 10px;
         left: calc((100vw - 20px) /2);
+        bottom: 1px;
         transform: translateX(-50%);
-        width: 100%;
+        animation: none;
+        width: calc(100vw - 40px);
+        box-shadow: none;
         z-index: 2;
         opacity: .9;
     }
 
     .home-container div:hover {
-        transform: none;
+        animation: none;
+        box-shadow: 0 0 10px;
+        transform: translateX(-50%);
     }
 
     #cv {
@@ -486,6 +506,13 @@ textarea:focus{
         display: flex;
         flex-wrap: wrap;
         position: relative;
+    }
+
+    .skills div{
+        top: 0;
+        left: 0;
+        position: relative;
+        animation: none;
     }
 
 

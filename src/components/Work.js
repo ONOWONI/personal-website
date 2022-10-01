@@ -1,7 +1,7 @@
 import img from '../img/djurnal.png'
 import poolinc from '../img/poolinc.png'
 import poolinc2 from '../img/secondpoolinc.png'
-import cv from "../img/resume.dotx";
+import cv from "../img/resume.docx";
 import { Fullpage, FullPageSections, FullpageSection, FullpageNavigation } from '@ap.cx/react-fullpage'
 
 export default function Work() {
