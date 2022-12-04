@@ -53,7 +53,7 @@ export default function Home() {
             <div className="home-container">
                 <Textdiv>
                     Welcome
-                    <p>Hi, I'm Daniel a python web developer with both front and backend skills. I started programmming because of the pandemic and i continued because i fell in love with it. i love you very much.</p>
+                    <p>Hi, I'm laura a python web developer with both front and backend skills. I started programmming because of the pandemic and i continued because i fell in love with it. i love you very much.</p>
                     <p>lorem impusm is a text that we use to fill spaces in html. it is not availaible in react's stupid jsx because it is stupid and not worth it just like everybody is to everybody</p>
                     <p>the auto complete on this stupid babel is just shit and i just want to say that there are many things wrong with react, it is one of the worst frameworks that i have used. No cancel that, it is the worst framework that i have used and yes i have used flask</p>
                 </Textdiv>

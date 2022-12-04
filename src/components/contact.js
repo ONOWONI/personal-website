@@ -75,6 +75,18 @@ export default function Contact(){
                 <textarea  name="body" placeholder="Body" value={form.body} onChange={handleForm} style={styles} />
                 <input type="submit" value="Send" className="btn" />
             </form>
+            <div className="icon-container">
+                <a href='https://djurnal.herokuapp.com/' className="social-icon">
+                    <div>
+                        github
+                    </div>
+                </a>
+                <a href='https://djurnal.herokuapp.com/' className="social-icon">
+                    <div>
+                        twitter
+                    </div>
+                </a>
+            </div>
         </div>
     )
 }
