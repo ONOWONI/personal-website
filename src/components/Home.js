@@ -52,13 +52,12 @@ export default function Home() {
         <div className="home background">
             <div className="home-container">
                 <Textdiv>
-                    Welcome
-                    <p>Hi, I'm laura a python web developer with both front and backend skills. I started programmming because of the pandemic and i continued because i fell in love with it. i love you very much.</p>
-                    <p>lorem impusm is a text that we use to fill spaces in html. it is not availaible in react's stupid jsx because it is stupid and not worth it just like everybody is to everybody</p>
-                    <p>the auto complete on this stupid babel is just shit and i just want to say that there are many things wrong with react, it is one of the worst frameworks that i have used. No cancel that, it is the worst framework that i have used and yes i have used flask</p>
+                    <p>Hi there! My name is <span className="large-text">Daniel</span> and I am a backend developer with a passion for creating efficient and scalable web applications. I have developed a strong skill set in languages such as Python and JavaScript, as well as backend technologies like Django and Flask.</p>
+                    <p>I love the challenge of designing and developing <span className="large-text">Web applications</span> that are both efficient and user-friendly. I've worked with all sorts of APIs, third-party integrations, and <span className="large-text">Databases</span>, and I'm always looking for new ways to improve my skills and stay up-to-date with the latest technologies.</p>
+                    <p>In my free time, you can usually find me tinkering with personal projects or <span className="large-text">Nerding</span> out over the latest tech news. I'm always down to chat about programming or just hang out, so don't be shy! Feel free to shoot me a message or connect with me on <a href="https://linkedin.com/in/daniel-onowoni" className="text-link">LinkedIn.</a></p>
                 </Textdiv>
-                <img src={star1} alt="logo" className="star" />
-                <Kunai src={kunai} alt="logo" className="kunai" />
+                <img src={star1} alt="logo" className="star spinning" />
+                <Kunai src={kunai} alt="logo" className="kunai spinning" />
             </div>
         </div>
     )

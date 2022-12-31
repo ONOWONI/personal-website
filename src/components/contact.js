@@ -1,5 +1,11 @@
 import React from "react";
 import emailjs from "emailjs-com";
+import twitter from "../img/twitter-1.svg"
+import linkedin from "../img/linkedin-1.svg"
+import github from "../img/github-3.svg"
+
+
+
 
 export default function Contact(){
 
@@ -76,14 +82,19 @@ export default function Contact(){
                 <input type="submit" value="Send" className="btn" />
             </form>
             <div className="icon-container">
-                <a href='https://djurnal.herokuapp.com/' className="social-icon">
+                <a href='https://github.com/ONOWONI' target="_blank" rel="noreferrer" className="social-icon">
                     <div>
-                        github
+                        <img src={github} alt="github-logo"></img>
                     </div>
                 </a>
-                <a href='https://djurnal.herokuapp.com/' className="social-icon">
+                <a href='https://linkedin.com/in/daniel-onowoni' target="_blank" className="social-icon" rel="noreferrer">
                     <div>
-                        twitter
+                        <img src={linkedin} alt="linkedin-logo"></img>
+                    </div>
+                </a>
+                <a href='https://twitter.com/DOnowoni' target="_blank" className="social-icon" rel="noreferrer">
+                    <div>
+                        <img src={twitter} alt="twitter-logo"></img>
                     </div>
                 </a>
             </div>
