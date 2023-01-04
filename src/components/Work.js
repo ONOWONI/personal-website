@@ -18,9 +18,9 @@ export default function Work() {
                         </div>
                         <div className="project-text">
                             <h1>Poultry Plus</h1>
-                            <p>Introducing the ultimate tool for livestock owners! Our site makes it easy to keep track of your animals, and stay on top of important tasks like feeding and vaccination schedules. Plus,
+                            <p>Introducing the ultimate tool for livestock owners! Our site makes it easy to keep track of your animals, and stay on top of important tasks like feeding. Plus,
                                 our built-in bookkeeping features allow you to easily track your expenses and income, so you can keep your farm or ranch running smoothly. With our user-friendly interface and powerful features,
-                                you'll have everything you need to manage your livestock and your business all in one place. Try it today and take control of your farm or ranch!
+                                you'll have everything you need to manage your livestock and your business all in one place.
                             </p>
                             <p className='bottom-text'>Check it Out <a href='https://djurnal.herokuapp.com/' className='out-link' target="_blanc" >here</a></p>
                             <p className='bottom-text'>Github code <a href='https://github.com/ONOWONI/poultry-plus.git' className='out-link' target="_blanc" >here</a></p>
