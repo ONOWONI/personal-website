@@ -226,11 +226,14 @@ body{
 
 .project-img{
     height: 100%;
+    margin-left: 10px;
 }
 
 .project-img img{
     height: 100%;
-    width: 100%;
+    width: calc(100% - 20px);
+    border: 10px solid #fff;
+    border-radius: 10px;
 }
 
 .project-text{
@@ -508,8 +511,8 @@ textarea:focus{
     }
     .home-container div {
         padding: 0 10px;
+        top: 59px;
         left: calc((100vw - 20px) /2);
-        /* bottom: 1px; */
         transform: translateX(-50%);
         animation: none;
         width: calc(100vw - 40px);
@@ -536,13 +539,18 @@ textarea:focus{
 
     .project-card {
         width: calc(100vw - 20px);
-        margin-bottom:10px;
+        margin-bottom:100px;
         display: flex;
         flex-direction: column;
     }
 
     .not-first{
         top: 15vh;
+    }
+
+    .project-img{
+        margin-left: 0;
+        width: calc(100% - 20px);
     }
     .project-text{
         width: 100%;
