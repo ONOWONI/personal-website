@@ -82,8 +82,17 @@ body{
     overflow: hidden;
 }
 
+.about-me-header{
+    display: none;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(/src/img/ZatiyanRegular-ZV9Jm.otf);
+  }
+
+
 .large-text{
-    font-family: cursive;
+    font-family: myFirstFont;
     font-size: 2rem;
     font-weight: 900;
 }
@@ -232,8 +241,8 @@ body{
 .project-img img{
     height: 100%;
     width: calc(100% - 20px);
-    border: 10px solid #fff;
-    border-radius: 10px;
+    /* border: 10px solid #fff; */
+    /* border-radius: 10px; */
 }
 
 .project-text{
@@ -453,6 +462,7 @@ textarea:focus{
     }
     .footer {
         height: 50px;
+        z-index: 3;
     }
 
 
@@ -482,6 +492,11 @@ textarea:focus{
         height: calc(100vh - 91px);
         overflow: auto;
     }
+    .about-me-header{
+        font-family: myFirstFont;
+        display: block;
+        text-decoration: underline;
+    }
 
     .spinning{
         display: none;
@@ -499,6 +514,8 @@ textarea:focus{
 
     .home-container{
         display: block;
+        margin-bottom: 100px;
+        z-index: 0;
     }
 
     .kunai {
@@ -511,13 +528,12 @@ textarea:focus{
     }
     .home-container div {
         padding: 0 10px;
-        top: 59px;
+        top: 49px;
         left: calc((100vw - 20px) /2);
         transform: translateX(-50%);
         animation: none;
         width: calc(100vw - 40px);
         box-shadow: none;
-        z-index: 2;
         opacity: .9;
     }
 
@@ -549,7 +565,6 @@ textarea:focus{
     }
 
     .project-img{
-        margin-left: 0;
         width: calc(100% - 20px);
     }
     .project-text{

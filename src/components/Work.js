@@ -1,7 +1,7 @@
 import img from '../img/poultry-plus.png';
 import img2 from '../img/djurnal.png';
 import poolinc from '../img/poolinc.png';
-import cv from '../img/danielonowoniCV.pdf';
+import cv from '../img/danielonowoniCV(2).pdf';
 import { Fullpage, FullPageSections, FullpageSection, FullpageNavigation } from '@ap.cx/react-fullpage'
 
 export default function Work() {
@@ -12,7 +12,7 @@ export default function Work() {
             <FullPageSections >
                 <FullpageSection>
                     <h1 className='project-header'>Here is a list of projects that i have done</h1>
-                    <a href={cv} id='cv'>Download CV</a>
+                    <a href={cv} id='cv' target="_blanc">Download CV</a>
                     <div className="left-card project-card">
                         <div className="project-img">
                             <img src={img} alt="Home screen of project" />
