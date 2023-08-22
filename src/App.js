@@ -10,6 +10,7 @@ import Error from './components/error';
 function App() {
   return (
     <BrowserRouter>
+      <Footer />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='work' element={<Work />} />
@@ -17,7 +18,6 @@ function App() {
         <Route path='contact' element={<Contact />} />
         <Route path='*' element={<Error />} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }

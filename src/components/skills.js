@@ -1,78 +1,49 @@
 import React from "react"
-import Bubbles from "./bubbles"
+import figma from "../img/figma.svg"
 import reactsvg from "../img/react-2.svg"
-import django from "../img/django-community.svg"
+import django from "../img/django.png"
 import python from "../img/python-4.svg"
 import javascript from "../img/logo-javascript.svg"
-import flask from "../img/flask.svg"
+import flask from "../img/flask.png"
 import fastapi from "../img/fastapi-1.svg"
 import css from "../img/css-3.svg"
 import html from "../img/html-1.svg"
+import nodejs from "../img/node.png"
+import photoshop from "../img/photoshop.svg"
 
 export default function Skills() {
-    const [yes, setYes] = React.useState(generateIdClick())
-
-
-    function generateIdClick() {
-        let arr = []
-        const names = [reactsvg, django,flask,fastapi,html,css, python,javascript]
-        for (let i = 0; i < 8; i++) {
-          arr.push({
-            id: i+1,
-            name: names[i],
-            isClicked : false,
-            animate_number : randoms()
-            })
-          }
-        return arr
-        }
-
-    function randoms() {
-      const xTop = Math.floor(Math.random() * (window.innerWidth - 200))
-      const yTop = Math.floor(Math.random() * (window.innerHeight - 200))
-      const xLeft = Math.floor(Math.random() * (window.innerWidth - 200))
-      const yLeft = Math.floor(Math.random() * (window.innerHeight - 200))
-      const xBottom = Math.floor(Math.random() * (window.innerWidth - 200))
-      const yBottom = Math.floor(Math.random() * (window.innerHeight - 200))
-      const xRight = Math.floor(Math.random() * (window.innerWidth - 200))
-      const yRight = Math.floor(Math.random() * (window.innerHeight - 200))
-      const speed = Math.floor(Math.random() * 30) + 10
-      return [xTop, yTop, xLeft, yLeft, xBottom, yBottom, xRight, yRight, speed]
-    }
-
-
-
-
-    function handleMouse(itemID) {
-    setYes(prev => {
-      return prev.map(item => {
-        return item.id === itemID ? {...item, isClicked: !item.isClicked} : item
-        })
-      })
-    }
-
-    function mouseOut(itemID) {
-      setYes(prev => {
-        return prev.map(item => {
-          return item.id === itemID ? {...item, isClicked: !item.isClicked} : item
-        })
-      })
-    }
-
-
-
-
-    const bubbles = yes.map(item => <Bubbles key={item.id}
-       id={item.id}
-       onMouseEnter={() => handleMouse(item.id)}
-       isOver={item.isClicked}
-       name={item.name}
-       animate_list={item.animate_number}
-       mouseOut={() => mouseOut(item.id)}
-       />)
-    return(
-        <div className="skills background">
-            {bubbles}
+    return (
+      <div className="service-page">
+        <div className="service-top-card-container">
+          <div>
+            <p className="service-header">WEB DEVELOPMENT</p>
+            <p className="service-page-description-text">I provide a comprehensive range of web development services, from creating basic static websites to complex e-commerce platforms. I can assist you with every step of your web development project, from design and development to hosting and maintenance.</p>
+            <p className="service-page-description-text">I do this with the help of these tools</p>
+            <div className="logo-container">
+              <img src={python} alt="python logo" />
+              <img src={javascript} alt="javascript logo" />
+              <img src={django} alt="django logo" />
+              <img src={nodejs} alt="nodejs logo" />
+              <img src={flask} alt="flask logo" />
+              <img src={fastapi} alt="fastapi logo" />
+            </div>
+          </div>
+          <div>
+            <p className="service-header">WEB DESIGN</p>
+            <p className="service-page-description-text">Need websites that are visually appealing, user-friendly and tailored to your business needs? I work with you to understand your goals and create a design that will help you achieve them using these tools</p>
+            <div className="logo-container">
+              <img src={figma} alt="figma logo" />
+              <img src={html} alt="html logo" />
+              <img src={css} alt="css logo" />
+              <img src={reactsvg} alt="react logo" />
+              <img src={photoshop} alt="phohtoshop logo" />
+            </div>
+          </div>
         </div>
+        <div className="service-bottom-card">
+          <p className="service-header">DIGITAL MARKETING</p>
+          <p className="service-page-description-text">Businesses can grow their online presence and reach their target audience through a variety of digital marketing channels, such as search engine optimization (SEO) and content marketing. Businesses of all sizes can work with a digital marketing expert like me to create and implement custom marketing strategies that meet their specific needs and goals.</p>
+        </div>
+      </div>
     )
 }
