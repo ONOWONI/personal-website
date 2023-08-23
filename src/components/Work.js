@@ -1,7 +1,7 @@
-import img from '../img/poultry-plus.png';
+import img from '../img/poultryplus.png';
 import img2 from '../img/djurnal.png';
 import poolinc from '../img/poolinc.png';
-import cv from '../img/danielonowoniCV(2).pdf';
+import cv from '../img/danielonowonicv.pdf';
 import arrow from "../img/arrow.png"
 import github from "../img/github-3.svg"
 
