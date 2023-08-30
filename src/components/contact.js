@@ -87,12 +87,12 @@ export default function Contact(){
     }
 
     const styles = {
-        color : form.body === "*Required" ?  "#f53838cc" :  "#ffec19"
+        color : form.body === "*Required" ?  "#f53838cc" :  "#979696"
     }
 
 
     return (
-        <div className="contact background">
+        <div className="contact">
             <p className="contact-intro-text">I am available to discuss working together. Please contact me at your earliest<br/> convenience.</p>
             <form onSubmit={handleSubmit}>
                 <p>Send me an email</p>
