@@ -23,7 +23,9 @@ export default function Footer() {
     return (
         <footer className="footer">
             <h1>{headerText}</h1>
-            <div onClick={handleMenuBtn}><img src={menuBtn ? closeBtn : menuBtnSvg} alt="Open And Close Button"/></div>
+            <div onClick={handleMenuBtn}>
+                <img src={menuBtn ? closeBtn : menuBtnSvg} alt="Open And Close Button"/>
+            </div>
             <ul className={menuBtn ? "footer-open footer-ul" : "footer-ul"}>
             <NavLink to="/" className="link-text" onClick={() => menuOnClick("ABOUT")}>
                 <li>ABOUT</li>

@@ -429,7 +429,7 @@ textarea:focus{
     .footer > h1 {
         display: block;
         height: 70px;
-        padding: 12px 0 0 10px;
+        padding: 12px 0 0 20px;
         /* font-family: Merienda; */
     }
 
@@ -483,11 +483,11 @@ textarea:focus{
     }
 
     .text-container-content > p {
+        justify-content: center;
         font-size: 1rem;
         width: 100%;
-        text-align: left;
-        font-weight: normal;
-        letter-spacing: 1px;
+        text-align: center;
+        /* letter-spacing: 1px; */
         /* word-spacing: 2px; */
     }
 
@@ -497,12 +497,13 @@ textarea:focus{
     }
 
     #web-dev-text {
-        font-size: 1.8rem;
-        line-height: 1.5rem;
+        font-size: 1.7rem;
+        line-height: 1.8rem;
     }
 
     .text-container-content > p:last-child {
-        padding-top: 10vh;
+        padding-top: 30%;
+        /* text-align: left; */
     }
 
 
@@ -517,7 +518,8 @@ textarea:focus{
     #work-intro-text-container {
         flex-direction: column;
         gap: 50px;
-        margin: 70px 0 0vh 0;
+        height: 30vh;
+        margin: 30px 0 0 0;
     }
 
     #work-intro-text-container p, #work-intro-text-container a {
@@ -532,13 +534,15 @@ textarea:focus{
 
     .project-card {
         width: 100%;
+        height: 40vh;
         padding: 0 0 100px 0;
     }
 
     .service-page {
         width: 100%;
-        margin-top: 7vh;
+        height: auto;
         padding: 30px 20px;
+        margin-bottom: 50px;
     }
 
 
@@ -562,8 +566,8 @@ textarea:focus{
 
 
     .contact {
-        margin: 20vh 0 0 0;
-        padding: 20px;
+        height: auto;
+        padding: 30px 20px;
     }
 
     .contact-intro-text {
