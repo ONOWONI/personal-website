@@ -13,7 +13,7 @@ import photoshop from "../img/photoshop.svg"
 
 export default function Skills() {
     return (
-      <div className="service-page">
+      <div className="service-page home-page-content glass-effect">
         <div className="service-top-card-container">
           <div>
             <p className="service-header">WEB DEVELOPMENT</p>

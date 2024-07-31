@@ -9,7 +9,7 @@ import github from "../img/github-3.svg"
 
 export default function Work() {
     return (
-        <div className="work">
+        <div className="work glass-effect home-page-content">
             <div id='work-intro-text-container'>
                 <p className='project-header'>Here are some of the projects that i have worked on.</p>
                 <div><a href={cv} id='cv' target="_blanc">Resume <img src={arrow} alt="Home screen of project" /></a></div>

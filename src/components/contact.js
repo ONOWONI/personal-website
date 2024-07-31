@@ -92,7 +92,7 @@ export default function Contact(){
 
 
     return (
-        <div className="contact">
+        <div className="contact home-page-content glass-effect">
             <p className="contact-intro-text">I am available to discuss working together. Please contact me at your earliest<br/> convenience.</p>
             <form onSubmit={handleSubmit}>
                 <p>Send me an email</p>
@@ -106,23 +106,6 @@ export default function Contact(){
                 <p>I get back between two business days</p>
                 <button className="btn">Close</button>
             </div> */}
-            <div className="icon-container">
-                <a href='https://github.com/ONOWONI' target="_blank" rel="noreferrer" className="social-icon">
-                    <div>
-                        <img src={github} alt="github-logo"></img>
-                    </div>
-                </a>
-                <a href='https://linkedin.com/in/daniel-onowoni' target="_blank" className="social-icon" rel="noreferrer">
-                    <div>
-                        <img src={linkedin} alt="linkedin-logo"></img>
-                    </div>
-                </a>
-                <a href='https://twitter.com/DOnowoni' target="_blank" className="social-icon" rel="noreferrer">
-                    <div>
-                        <img src={twitter} alt="twitter-logo"></img>
-                    </div>
-                </a>
-            </div>
         </div>
     )
 }
